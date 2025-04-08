@@ -1,0 +1,10 @@
+name: test tmate
+on:
+  workflow_dispatch:
+
+jobs:
+  tmate_test:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
